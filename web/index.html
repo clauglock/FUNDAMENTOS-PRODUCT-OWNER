@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo Azul — Fundamentos Product Owner</title>
+  <meta name="description" content="Portafolio del Grupo Azul. Curso Fundamentos Product Owner, Alkemy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" aria-label="Navegaci&#243;n principal">
+    <a href="#hero" class="nav__logo" aria-label="Inicio">
+      <span class="nav__logo-mark"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h.01"/><path d="M7 20v-4"/><path d="M12 20v-8"/><path d="M17 20V8"/><path d="M22 4v16"/></svg></span>
+      <span class="nav__logo-text">Grupo Azul</span>
+    </a>
+    <div class="nav__links">
+      <a href="#proyectos" class="nav__link">Proyectos</a>
+      <a href="#metodologias" class="nav__link">Metodolog&#237;as</a>
+      <a href="#equipo" class="nav__link">Equipo</a>
+      <button class="nav__theme" aria-label="Cambiar tema" type="button">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+  <!-- HERO -->
+  <header class="hero" id="hero" aria-label="Presentaci&#243;n">
+    <!-- SVG Morph — herramientas PO -->
+    <div class="morph morph--hero" aria-hidden="true">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path class="morph__path morph__path--a" d="M100,30 C145,30 170,55 170,100 C170,145 145,170 100,170 C55,170 30,145 30,100 C30,55 55,30 100,30 Z"/>
+      </svg>
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path class="morph__path morph__path--b" d="M100,30 C145,30 170,55 170,100 C170,145 145,170 100,170 C55,170 30,145 30,100 C30,55 55,30 100,30 Z"/>
+      </svg>
+    </div>
+    <div class="hero__label">Alkemy — Fundamentos Product Owner</div>
+    <h1 class="hero__title">
+      <span class="hero__title-line">Seis proyectos.</span>
+      <span class="hero__title-line">Un equipo.</span>
+      <span class="hero__title-line hero__title-accent">Una visi&#243;n de producto.</span>
+    </h1>
+    <p class="hero__sub">
+      Del an&#225;lisis de industria al Agile Inception Deck &mdash; el recorrido completo del Grupo Azul
+      como equipo de Product Owners.
+    </p>
+    <a href="#proyectos" class="hero__scroll-cue">
+      <span>Explorar proyectos</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+    </a>
+  </header>
+
+  <!-- TIMELINE -->
+  <section class="timeline" id="proyectos" aria-label="L&#237;nea de tiempo de proyectos">
+    <div class="morph morph--timeline" aria-hidden="true">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path class="morph__path morph__path--c" d="M100,30 C145,30 170,55 170,100 C170,145 145,170 100,170 C55,170 30,145 30,100 C30,55 55,30 100,30 Z"/>
+      </svg>
+    </div>
+    <div class="timeline__track">
+      <div class="timeline__line" aria-hidden="true"></div>
+
+      <!-- M2 -->
+      <article class="project" data-module="2">
+        <div class="project__marker" aria-hidden="true">
+          <span class="project__number">02</span>
+        </div>
+        <div class="project__content">
+          <div class="project__meta">
+            <span class="project__tag">Transformaci&#243;n Digital</span>
+          </div>
+          <h2 class="project__title">EvoluTech</h2>
+          <p class="project__subtitle">Visi&#243;n de producto digital para Manufacturing Solutions Co.</p>
+          <button class="project__toggle" aria-expanded="false" aria-controls="panel-m2" type="button">
+            <span class="project__toggle-text" data-show="Ver caso completo" data-hide="Cerrar"></span>
+            <svg class="project__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="project__body" id="panel-m2" aria-hidden="true">
+            <div class="project__body-inner">
+              <p>La empresa enfrenta un entorno altamente competitivo y digitalizado. Desde el rol de Product Owner, definimos una visi&#243;n de producto que alinea tecnolog&#237;a, negocio y experiencia del cliente para acompa&#241;ar su transformaci&#243;n digital.</p>
+              <div class="project__details">
+                <div class="project__detail">
+                  <span class="project__detail-label">Desaf&#237;o</span>
+                  <span class="project__detail-value">Alinear cambios tecnol&#243;gicos y sociales con una soluci&#243;n digital coherente</span>
+                </div>
+                <div class="project__detail">
+                  <span class="project__detail-label">Soluci&#243;n</span>
+                  <span class="project__detail-value">Declaraci&#243;n de visi&#243;n como &ldquo;norte&rdquo; para el desarrollo del producto</span>
+                </div>
+                <div class="project__detail">
+                  <span class="project__detail-label">Enfoque</span>
+                  <span class="project__detail-value">Prop&#243;sito, Audiencia, Diferenciador, Inspiraci&#243;n</span>
+                </div>
+              </div>
+              <div class="project__tools">
+                <span>Product Vision Board</span>
+                <span>An&#225;lisis de Industria</span>
+                <span>Propuesta de Valor</span>
+                <span>Stakeholder Mapping</span>
+                <span>Priorizaci&#243;n Estrat&#233;gica</span>
+                <span>IoT / IA / CRM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- M3 -->
+      <article class="project" data-module="3">
+        <div class="project__marker" aria-hidden="true">
+          <span class="project__number">03</span>
+        </div>
+        <div class="project__content">
+          <div class="project__meta">
+            <span class="project__tag">Lean Startup</span>
+          </div>
+          <h2 class="project__title">SnackXpress</h2>
+          <p class="project__subtitle">Micro-clases de snacks saludables para FoodLab Latam</p>
+          <button class="project__toggle" aria-expanded="false" aria-controls="panel-m3" type="button">
+            <span class="project__toggle-text" data-show="Ver caso completo" data-hide="Cerrar"></span>
+            <svg class="project__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="project__body" id="panel-m3" aria-hidden="true">
+            <div class="project__body-inner">
+              <p>FoodLab Latam enfrenta una ca&#237;da del 15% en ventas. Como equipo PO, dise&#241;amos un Lean Canvas y un experimento MVP para validar si el mercado pagar&#237;a USD 9/mes por micro-clases virtuales de cocina saludable.</p>
+              <div class="project__details">
+                <div class="project__detail">
+                  <span class="project__detail-label">Hip&#243;tesis</span>
+                  <span class="project__detail-value">Adultos 25-45 pagar&#237;an USD 9/mes por micro-clases de snacks saludables</span>
+                </div>
+                <div class="project__detail">
+                  <span class="project__detail-label">MVP</span>
+                  <span class="project__detail-value">Landing Page + Form con 3 preguntas dirigidas en Google Sites</span>
+                </div>
+                <div class="project__detail">
+                  <span class="project__detail-label">Validaci&#243;n</span>
+                  <span class="project__detail-value">10+ personas por integrante con datos reales</span>
+                </div>
+              </div>
+              <div class="project__semaforo" role="list" aria-label="Sem&#225;foro de decisi&#243;n">
+                <div class="semaforo__item semaforo--green" role="listitem">
+                  <span class="semaforo__pct">&gt;30%</span>
+                  <span class="semaforo__label">Perseverar</span>
+                </div>
+                <div class="semaforo__item semaforo--yellow" role="listitem">
+                  <span class="semaforo__pct">10-29%</span>
+                  <span class="semaforo__label">Optimizar</span>
+                </div>
+                <div class="semaforo__item semaforo--red" role="listitem">
+                  <span class="semaforo__pct">&lt;10%</span>
+                  <span class="semaforo__label">Pivotar</span>
+                </div>
+              </div>
+              <div class="project__tools">
+                <span>Lean Canvas</span>
+                <span>Visi&#243;n de Producto</span>
+                <span>Google Forms</span>
+                <span>Google Sites</span>
+                <span>Landing Page MVP</span>
+                <span>Sem&#225;foro de Decisi&#243;n</span>
+                <span>Pitch Deck</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- M4 -->
+      <article class="project" data-module="4">
+        <div class="project__marker" aria-hidden="true">
+          <span class="project__number">04</span>
+        </div>
+        <div class="project__content">
+          <div class="project__meta">
+            <span class="project__tag">Design Thinking</span>
+          </div>
+          <h2 class="project__title">Trayecto Design Thinking</h2>
+          <p class="project__subtitle">Aplicaci&#243;n completa del proceso de Design Thinking</p>
+          <button class="project__toggle" aria-expanded="false" aria-controls="panel-m4" type="button">
+            <span class="project__toggle-text" data-show="Ver caso completo" data-hide="Cerrar"></span>
+            <svg class="project__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="project__body" id="panel-m4" aria-hidden="true">
+            <div class="project__body-inner">
+              <p>Recorrimos las 5 etapas de Design Thinking para transformar un MVP definido en un plan &#225;gil. Desde la empat&#237;a con usuarios reales hasta el testeo de prototipos, cada fase nos acerc&#243; a una soluci&#243;n centrada en el usuario.</p>
+              <div class="project__phases">
+                <div class="phase">
+                  <div class="phase__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                  </div>
+                  <span class="phase__name">Empatizar</span>
+                </div>
+                <div class="phase">
+                  <div class="phase__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                  </div>
+                  <span class="phase__name">Definir</span>
+                </div>
+                <div class="phase">
+                  <div class="phase__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                  </div>
+                  <span class="phase__name">Idear</span>
+                </div>
+                <div class="phase">
+                  <div class="phase__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                  </div>
+                  <span class="phase__name">Prototipar</span>
+                </div>
+                <div class="phase">
+                  <div class="phase__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                  </div>
+                  <span class="phase__name">Testear</span>
+                </div>
+              </div>
+              <div class="project__tools">
+                <span>Mapa de Empat&#237;a</span>
+                <span>Point of View</span>
+                <span>Customer Journey</span>
+                <span>Brainstorming</span>
+                <span>Prototipado R&#225;pido</span>
+                <span>Testing con Usuarios</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- M5 -->
+      <article class="project" data-module="5">
+        <div class="project__marker" aria-hidden="true">
+          <span class="project__number">05</span>
+        </div>
+        <div class="project__content">
+          <div class="project__meta">
+            <span class="project__tag">Metodolog&#237;a &#193;gil</span>
+          </div>
+          <h2 class="project__title">Redise&#241;o de Vi&#225;ticos</h2>
+          <p class="project__subtitle">Sistema inteligente de gesti&#243;n de vi&#225;ticos corporativos</p>
+          <button class="project__toggle" aria-expanded="false" aria-controls="panel-m5" type="button">
+            <span class="project__toggle-text" data-show="Ver caso completo" data-hide="Cerrar"></span>
+            <svg class="project__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="project__body" id="panel-m5" aria-hidden="true">
+            <div class="project__body-inner">
+              <p>5.400 solicitudes/a&#241;o, 12% de error, 8% de boletas incompletas. Dise&#241;amos un sistema digital con carga m&#243;vil, OCR, validaci&#243;n autom&#225;tica y dashboard financiero en tiempo real.</p>
+              <div class="project__metrics">
+                <div class="metric">
+                  <span class="metric__value">$40M</span>
+                  <span class="metric__label">Capex CLP</span>
+                </div>
+                <div class="metric">
+                  <span class="metric__value">76%</span>
+                  <span class="metric__label">ROI a 24 meses</span>
+                </div>
+                <div class="metric">
+                  <span class="metric__value">13.6</span>
+                  <span class="metric__label">Payback (meses)</span>
+                </div>
+                <div class="metric">
+                  <span class="metric__value">8</span>
+                  <span class="metric__label">Sprints planificados</span>
+                </div>
+              </div>
+              <div class="project__details">
+                <div class="project__detail">
+                  <span class="project__detail-label">SMART</span>
+                  <span class="project__detail-value">Reducir error de 12% a 2%, ciclo de 20 a 5 d&#237;as, adopci&#243;n &gt;70%</span>
+                </div>
+                <div class="project__detail">
+                  <span class="project__detail-label">Alcance</span>
+                  <span class="project__detail-value">App m&#243;vil Android/iOS, OCR, reglas autom&#225;ticas, tracking en tiempo real, modo offline</span>
+                </div>
+              </div>
+              <div class="project__tools">
+                <span>Scrum</span>
+                <span>WSJF</span>
+                <span>Jira</span>
+                <span>Project Charter</span>
+                <span>User Stories</span>
+                <span>Sprint Planning</span>
+                <span>Google Vision OCR</span>
+                <span>MarvelApp</span>
+                <span>Objetivo SMART</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- M6 -->
+      <article class="project" data-module="6">
+        <div class="project__marker" aria-hidden="true">
+          <span class="project__number">06</span>
+        </div>
+        <div class="project__content">
+          <div class="project__meta">
+            <span class="project__tag">Rol del Product Owner</span>
+          </div>
+          <h2 class="project__title">PO en EdTech</h2>
+          <p class="project__subtitle">&#193;rea de Innovaci&#243;n y Producto de una empresa EdTech</p>
+          <button class="project__toggle" aria-expanded="false" aria-controls="panel-m6" type="button">
+            <span class="project__toggle-text" data-show="Ver caso completo" data-hide="Cerrar"></span>
+            <svg class="project__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="project__body" id="panel-m6" aria-hidden="true">
+            <div class="project__body-inner">
+              <p>Ejercicio profundo sobre el rol del Product Owner dentro de una organizaci&#243;n EdTech. Gestionamos backlog, priorizamos iniciativas y articulamos la comunicaci&#243;n con stakeholders multidisciplinarios.</p>
+              <div class="project__details">
+                <div class="project__detail">
+                  <span class="project__detail-label">Contexto</span>
+                  <span class="project__detail-value">Empresa EdTech con crecimiento acelerado que necesita alinear producto con estrategia</span>
+                </div>
+                <div class="project__detail">
+                  <span class="project__detail-label">Foco</span>
+                  <span class="project__detail-value">Priorizar valor sobre volumen, conectar negocio con experiencia de usuario</span>
+                </div>
+                <div class="project__detail">
+                  <span class="project__detail-label">Aprendizaje</span>
+                  <span class="project__detail-value">El PO no solo gestiona backlog &mdash; es el puente entre negocio, tecnolog&#237;a y usuario</span>
+                </div>
+              </div>
+              <div class="project__tools">
+                <span>Product Backlog</span>
+                <span>Priorizaci&#243;n de Valor</span>
+                <span>Stakeholder Management</span>
+                <span>Roadmap</span>
+                <span>Definici&#243;n de MVP</span>
+                <span>Backlog Grooming</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- M7 -->
+      <article class="project" data-module="7">
+        <div class="project__marker" aria-hidden="true">
+          <span class="project__number">07</span>
+        </div>
+        <div class="project__content">
+          <div class="project__meta">
+            <span class="project__tag">Agile Inception</span>
+          </div>
+          <h2 class="project__title">EduHub</h2>
+          <p class="project__subtitle">Plataforma centralizada de aprendizaje digital para ense&#241;anza media</p>
+          <button class="project__toggle" aria-expanded="false" aria-controls="panel-m7" type="button">
+            <span class="project__toggle-text" data-show="Ver caso completo" data-hide="Cerrar"></span>
+            <svg class="project__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="project__body" id="panel-m7" aria-hidden="true">
+            <div class="project__body-inner">
+              <p>EdTech creci&#243; 22% en ventas pero su ecosistema digital fragmentado caus&#243; un 42% de abandono. Dise&#241;amos el Inception Deck completo para EduHub: un punto &#250;nico de entrada que centraliza el 85% de la experiencia digital.</p>
+              <div class="project__inception">
+                <div class="inception__grid">
+                  <div class="inception__item"><span class="inception__num">01</span><span class="inception__name">Prop&#243;sito</span></div>
+                  <div class="inception__item"><span class="inception__num">02</span><span class="inception__name">Elevator Pitch</span></div>
+                  <div class="inception__item"><span class="inception__num">03</span><span class="inception__name">Product Box</span></div>
+                  <div class="inception__item"><span class="inception__num">04</span><span class="inception__name">Not List</span></div>
+                  <div class="inception__item"><span class="inception__num">05</span><span class="inception__name">Vecinos</span></div>
+                  <div class="inception__item"><span class="inception__num">06</span><span class="inception__name">Soluci&#243;n MVP</span></div>
+                  <div class="inception__item"><span class="inception__num">07</span><span class="inception__name">Riesgos</span></div>
+                  <div class="inception__item"><span class="inception__num">08</span><span class="inception__name">Balance</span></div>
+                  <div class="inception__item"><span class="inception__num">09</span><span class="inception__name">Costo</span></div>
+                  <div class="inception__item"><span class="inception__num">10</span><span class="inception__name">Story Mapping</span></div>
+                </div>
+              </div>
+              <div class="project__metrics">
+                <div class="metric">
+                  <span class="metric__value">$17M</span>
+                  <span class="metric__label">CLP en 4 meses</span>
+                </div>
+                <div class="metric">
+                  <span class="metric__value">85%</span>
+                  <span class="metric__label">Centralizaci&#243;n UX</span>
+                </div>
+                <div class="metric">
+                  <span class="metric__value">-40%</span>
+                  <span class="metric__label">Tiempo b&#250;squeda</span>
+                </div>
+                <div class="metric">
+                  <span class="metric__value">+30%</span>
+                  <span class="metric__label">Recurrencia uso</span>
+                </div>
+              </div>
+              <div class="project__tools">
+                <span>Agile Inception Deck</span>
+                <span>Figma</span>
+                <span>Story Mapping</span>
+                <span>Wireframes</span>
+                <span>Elevator Pitch</span>
+                <span>Product Box</span>
+                <span>Matriz de Riesgos</span>
+                <span>Presupuesto MVP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- METODOLOGIAS -->
+  <section class="methods" id="metodologias" aria-label="Metodolog&#237;as aplicadas">
+    <div class="morph morph--methods" aria-hidden="true">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path class="morph__path morph__path--d" d="M100,30 C145,30 170,55 170,100 C170,145 145,170 100,170 C55,170 30,145 30,100 C30,55 55,30 100,30 Z"/>
+      </svg>
+    </div>
+    <div class="methods__header">
+      <h2 class="methods__title">Metodolog&#237;as aplicadas</h2>
+      <p class="methods__sub">Herramientas y frameworks que guiaron cada proyecto</p>
+    </div>
+    <dl class="methods__list">
+      <div class="method-item" data-accent="accent">
+        <dt class="method-item__title">Lean Startup</dt>
+        <dd class="method-item__desc">Lean Canvas, hip&#243;tesis, MVP, validaci&#243;n con usuarios reales, pivoteo basado en datos.</dd>
+        <dd class="method-item__ref">M&#243;dulo 3</dd>
+      </div>
+      <div class="method-item" data-accent="amber">
+        <dt class="method-item__title">Design Thinking</dt>
+        <dd class="method-item__desc">Empat&#237;a, definici&#243;n del problema, ideaci&#243;n divergente, prototipado r&#225;pido, testeo iterativo.</dd>
+        <dd class="method-item__ref">M&#243;dulo 4</dd>
+      </div>
+      <div class="method-item" data-accent="blue">
+        <dt class="method-item__title">Scrum</dt>
+        <dd class="method-item__desc">Sprints, historias de usuario, WSJF, backlog grooming, ceremonias &#225;giles, entrega incremental.</dd>
+        <dd class="method-item__ref">M&#243;dulo 5</dd>
+      </div>
+      <div class="method-item" data-accent="coral">
+        <dt class="method-item__title">Agile Inception</dt>
+        <dd class="method-item__desc">10 componentes del Inception Deck: desde el prop&#243;sito hasta el story mapping y presupuesto.</dd>
+        <dd class="method-item__ref">M&#243;dulo 7</dd>
+      </div>
+      <div class="method-item" data-accent="indigo">
+        <dt class="method-item__title">Product Vision</dt>
+        <dd class="method-item__desc">Vision Board, an&#225;lisis de industria, alineaci&#243;n estrat&#233;gica, priorizaci&#243;n orientada al valor.</dd>
+        <dd class="method-item__ref">M&#243;dulo 2</dd>
+      </div>
+      <div class="method-item" data-accent="violet">
+        <dt class="method-item__title">Stakeholder Management</dt>
+        <dd class="method-item__desc">Mapeo de stakeholders, comunicaci&#243;n efectiva, gesti&#243;n de expectativas, alineaci&#243;n multidisciplinaria.</dd>
+        <dd class="method-item__ref">M&#243;dulo 6</dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- EQUIPO -->
+  <section class="team" id="equipo" aria-label="Equipo">
+    <div class="team__content">
+      <h2 class="team__title">Grupo Azul</h2>
+      <p class="team__sub">
+        Equipo multidisciplinario del curso Fundamentos Product Owner de
+        <strong>Alkemy</strong>. Seis m&#243;dulos, seis desaf&#237;os reales, un objetivo com&#250;n:
+        pensar, analizar y proyectar como Product Owners.
+      </p>
+      <ul class="team__members" role="list">
+        <li class="team__member">Claudia Gonz&#225;lez</li>
+        <li class="team__member">Carlos Salinas</li>
+        <li class="team__member">Christian Rubilar</li>
+        <li class="team__member">Tiare Segura Mej&#237;as</li>
+        <li class="team__member">Valeska Garc&#237;a</li>
+        <li class="team__member">Daniel</li>
+      </ul>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__brand">Grupo Azul &mdash; Fundamentos Product Owner</span>
+      <span class="footer__alkemy">Alkemy 2025</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
