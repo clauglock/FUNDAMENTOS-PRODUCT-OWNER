@@ -183,8 +183,8 @@ ul, dl { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: transparent;
@@ -307,7 +307,7 @@ ul, dl { list-style: none; }
 }
 
 /* --- Scroll offset for fixed nav --- */
-[id] {
+.hero, .timeline, .methods, .team {
   scroll-margin-top: calc(var(--nav-height) + 1rem);
 }
 
@@ -441,12 +441,11 @@ ul, dl { list-style: none; }
   font-weight: 600;
   color: var(--accent);
   cursor: pointer;
-  transition: gap 0.25s var(--ease-out-quint), padding-right 0.25s var(--ease-out-quint);
+  transition: gap 0.25s var(--ease-out-quint);
 }
 
 .project__toggle:hover {
   gap: 0.7rem;
-  padding-right: 1.4rem;
 }
 .project__toggle:active { opacity: 0.7; }
 
@@ -1006,12 +1005,13 @@ ul, dl { list-style: none; }
 
 .morph__path {
   fill: var(--accent);
+  will-change: d;
 }
 
 /* --- Morph positions --- */
 
 /* Hero: large, right side */
-.hero { position: relative; overflow: clip; }
+.hero { position: relative; overflow: hidden; overflow: clip; }
 
 .morph--hero {
   right: -2%;
@@ -1031,7 +1031,7 @@ ul, dl { list-style: none; }
 }
 
 /* Timeline: medium, right-floating */
-.timeline { position: relative; overflow: clip; }
+.timeline { position: relative; overflow: hidden; overflow: clip; }
 
 .morph--timeline {
   right: 2%;
@@ -1041,7 +1041,7 @@ ul, dl { list-style: none; }
 }
 
 /* Methods: small, near header */
-.methods { position: relative; overflow: clip; }
+.methods { position: relative; overflow: hidden; overflow: clip; }
 
 .morph--methods {
   right: 5%;
